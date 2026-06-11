@@ -1,419 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Jatin Naudiyal — Senior Cloud & DevOps Engineer at Cloudsufi. 6+ years in GCP, Azure, Kubernetes, Terraform, and Agentic AI DevOps automation." />
-  <meta property="og:title" content="Jatin Naudiyal | Senior Cloud & DevOps Engineer" />
-  <title>Jatin Naudiyal | Senior Cloud & DevOps Engineer</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jatin Naudiyal | Cloud & DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Jatin Naudiyal - Senior Cloud & DevOps Engineer at Cloudsufi. Specialist in GCP, Azure, Kubernetes, and Agentic AI-powered DevOps.">
 </head>
 <body>
 
-  <!-- ══ FIXED NAV ══════════════════════════════════════ -->
-  <nav id="nav">
-    <a href="#" class="nav-mono" id="nav-logo" onclick="document.getElementById('hero').scrollIntoView({behavior:'smooth'});return false;">JN</a>
-    <ul class="nav-links" id="nav-links">
-      <li><button class="nl" data-target="about"       id="nl-about">About</button></li>
-      <li><button class="nl" data-target="skills"      id="nl-skills">Skills</button></li>
-      <li><button class="nl" data-target="projects"    id="nl-projects">Projects</button></li>
-      <li><button class="nl" data-target="experience"  id="nl-exp">Experience</button></li>
-      <li><button class="nl" data-target="credentials" id="nl-creds">Credentials</button></li>
-      <li><button class="nl" data-target="contact"     id="nl-contact">Contact</button></li>
+  <!-- Interactive Canvas Background -->
+  <canvas id="network-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#" class="logo"><span>></span> Jatin Naudiyal</a>
+    <ul class="nav-links">
+      <li><a href="#about">01. About</a></li>
+      <li><a href="#skills">02. Skills</a></li>
+      <li><a href="#projects">03. Projects</a></li>
+      <li><a href="#experience">04. Experience</a></li>
+      <li><a href="#contact">05. Contact</a></li>
     </ul>
-    <a href="mailto:iamjatinnaudiyal@gmail.com" class="nav-cta" id="nav-cta">Get in Touch</a>
-    <button class="ham" id="ham" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <a href="mailto:iamjatinnaudiyal@gmail.com" class="btn primary">Connect</a>
   </nav>
 
-  <!-- ══ DOT NAV (right side) ═══════════════════════════ -->
-  <aside id="dot-nav">
-    <div class="dot-item active" data-panel="hero"        id="dn-1"><span class="dl">Home</span><div class="dc"></div></div>
-    <div class="dot-item"        data-panel="about"       id="dn-2"><span class="dl">About</span><div class="dc"></div></div>
-    <div class="dot-item"        data-panel="skills"      id="dn-3"><span class="dl">Skills</span><div class="dc"></div></div>
-    <div class="dot-item"        data-panel="projects"    id="dn-4"><span class="dl">Projects</span><div class="dc"></div></div>
-    <div class="dot-item"        data-panel="experience"  id="dn-5"><span class="dl">Experience</span><div class="dc"></div></div>
-    <div class="dot-item"        data-panel="credentials" id="dn-6"><span class="dl">Credentials</span><div class="dc"></div></div>
-    <div class="dot-item"        data-panel="contact"     id="dn-7"><span class="dl">Contact</span><div class="dc"></div></div>
-  </aside>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content reveal">
+      <span class="greeting">sysadmin@cloudsufi:~$ ./greet.sh</span>
+      <h1>Jatin Naudiyal.</h1>
+      <h2>I automate cloud infrastructure.</h2>
+      <p class="hero-desc">
+        I'm a Senior Cloud & DevOps Engineer with 5+ years of experience architecting and managing production-grade infrastructure on GCP and Azure. I specialize in Agentic AI-powered DevOps, Kubernetes orchestration, and enterprise CI/CD.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn primary">Hire Me</a>
+      </div>
+    </div>
+    
+    <div class="terminal-container reveal">
+      <div class="terminal-header">
+        <div class="terminal-dots">
+          <div class="dot red"></div>
+          <div class="dot yellow"></div>
+          <div class="dot green"></div>
+        </div>
+        <div class="terminal-title">bash - jatin@devops-macbook:~</div>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+        <!-- Content injected by script.js -->
+        <span class="cursor"></span>
+      </div>
+    </div>
+  </section>
 
-  <!-- ══ SECTION COUNTER (bottom-left) ═════════════════ -->
-  <div id="section-counter"><span id="cnt-cur">01</span><span class="cnt-sep">/</span><span class="cnt-tot">07</span></div>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 class="section-title reveal">Expertise</h2>
+    <div class="skills-container">
+      
+      <div class="skill-category reveal">
+        <div class="skill-header">
+          <span class="skill-icon">☁️</span>
+          <h3 class="skill-title">Cloud Platforms</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">GCP (Architect)</span>
+          <span class="skill-tag">Azure</span>
+          <span class="skill-tag">AWS</span>
+        </div>
+      </div>
 
-  <!-- ══ SCROLL HINT ════════════════════════════════════ -->
-  <div id="scroll-hint"><div class="sh-arr"></div><span>Scroll</span></div>
+      <div class="skill-category reveal">
+        <div class="skill-header">
+          <span class="skill-icon">☸️</span>
+          <h3 class="skill-title">Containers & Orchestration</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">GKE</span>
+          <span class="skill-tag">AKS</span>
+          <span class="skill-tag">Helm</span>
+        </div>
+      </div>
 
-  <!-- ══════════════════════════════════════════════════
-       SNAP ROOT — 7 PANELS
-       ══════════════════════════════════════════════════ -->
-  <main id="snap-root">
+      <div class="skill-category reveal">
+        <div class="skill-header">
+          <span class="skill-icon">🤖</span>
+          <h3 class="skill-title">Agentic AI & GenAI</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">LangGraph</span>
+          <span class="skill-tag">Vertex AI</span>
+          <span class="skill-tag">Gemini</span>
+          <span class="skill-tag">OpenAI APIs</span>
+        </div>
+      </div>
 
-    <!-- ① HERO ─────────────────────────────────────── -->
-    <section class="panel" id="hero">
-      <div class="bg-num">01</div>
-      <div class="hero-glow"></div>
-      <div class="panel-inner hero-inner">
-        <div class="hero-l">
-          <div class="eyebrow fe"><span class="eline"></span>Senior Cloud &amp; DevOps Engineer · Cloudsufi</div>
-          <h1 class="hero-name fe">
-            <span class="hn-f">Jatin</span>
-            <em class="hn-l">Naudiyal.</em>
-          </h1>
-          <p class="hero-sub fe">
-            6+ years architecting production-grade cloud infrastructure on GCP &amp; Azure —
-            specializing in Agentic AI-powered DevOps, Kubernetes orchestration, and enterprise-scale CI/CD automation.
-          </p>
-          <div class="hero-contact fe">
-            <a href="tel:+919205041303" class="hc-item" id="hc-phone">📞 +91 9205041303</a>
-            <span class="hc-sep">·</span>
-            <a href="mailto:iamjatinnaudiyal@gmail.com" class="hc-item" id="hc-email">✉ iamjatinnaudiyal@gmail.com</a>
-            <span class="hc-sep">·</span>
-            <a href="https://linkedin.com/in/jatinnaudiyal" target="_blank" rel="noopener" class="hc-item" id="hc-li">LinkedIn</a>
-          </div>
-          <div class="hero-stats fe">
-            <div class="hst"><span class="hst-n">6<span class="hst-p">+</span></span><span class="hst-l">Years</span></div>
-            <div class="hst-sep"></div>
-            <div class="hst"><span class="hst-n">5</span><span class="hst-l">Certifications</span></div>
-            <div class="hst-sep"></div>
-            <div class="hst"><span class="hst-n">6</span><span class="hst-l">Key Projects</span></div>
-            <div class="hst-sep"></div>
-            <div class="hst"><span class="hst-n">30<span class="hst-p">+</span></span><span class="hst-l">Technologies</span></div>
-          </div>
-          <div class="hero-ctas fe">
-            <button class="cta-p" data-target="projects" id="h-proj-btn">View Projects</button>
-            <button class="cta-o" data-target="contact"  id="h-con-btn">Contact Me</button>
+      <div class="skill-category reveal">
+        <div class="skill-header">
+          <span class="skill-icon">🏗️</span>
+          <h3 class="skill-title">Infrastructure as Code</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Terraform</span>
+          <span class="skill-tag">Terragrunt</span>
+          <span class="skill-tag">Pulumi</span>
+          <span class="skill-tag">Ansible</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-header">
+          <span class="skill-icon">⚙️</span>
+          <h3 class="skill-title">CI/CD & GitOps</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">GitLab CI</span>
+          <span class="skill-tag">ArgoCD</span>
+          <span class="skill-tag">Jenkins</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-header">
+          <span class="skill-icon">🔒</span>
+          <h3 class="skill-title">DevSecOps & Network</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Cloud Armor</span>
+          <span class="skill-tag">Workload Identity</span>
+          <span class="skill-tag">Istio</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="section-title reveal">Key Deployments</h2>
+    <div class="projects-grid">
+      
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon">🧠</span>
+          <div class="project-links">
+            <a href="#">↗</a>
           </div>
         </div>
-        <div class="hero-r fe">
-          <div class="hero-badge-stack">
-            <div class="hbs-card hbs-main">
-              <div class="hbs-icon">🤖</div>
-              <div class="hbs-label">Agentic AI DevOps</div>
-              <div class="hbs-sub">LangGraph · Gemini · Vertex AI</div>
+        <h3 class="project-title">Autonomous Infra Remediation Agent</h3>
+        <p class="project-desc">Built an autonomous AI-driven remediation agent that resolves infrastructure incidents without human intervention, achieving a 45% MTTR reduction.</p>
+        <div class="project-tech">
+          <span>LangGraph</span><span>Gemini</span><span>Kubernetes</span><span>Terraform</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon">🌐</span>
+          <div class="project-links">
+            <a href="#">↗</a>
+          </div>
+        </div>
+        <h3 class="project-title">Multi-Region GKE Fleet</h3>
+        <p class="project-desc">Architected an active-active multi-region failover Kubernetes fleet using GKE, Anthos Service Mesh, and Istio for zero-downtime microservices.</p>
+        <div class="project-tech">
+          <span>GKE</span><span>Anthos</span><span>Istio</span><span>Cloud Armor</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon">⚡</span>
+          <div class="project-links">
+            <a href="#">↗</a>
+          </div>
+        </div>
+        <h3 class="project-title">LLM-Driven CI/CD Optimizer</h3>
+        <p class="project-desc">Engineered an LLM-assisted GitOps pipeline that optimizes deployment steps across 30+ microservices, resulting in a 40% deployment velocity gain.</p>
+        <div class="project-tech">
+          <span>GitHub Actions</span><span>LangChain</span><span>Vertex AI</span><span>ArgoCD</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon">🏗️</span>
+          <div class="project-links">
+            <a href="#">↗</a>
+          </div>
+        </div>
+        <h3 class="project-title">Azure Enterprise Landing Zone</h3>
+        <p class="project-desc">Led the migration of 25+ legacy monolithic applications to Azure Kubernetes Service (AKS), implementing Bicep IaC and FinOps dashboards.</p>
+        <div class="project-tech">
+          <span>AKS</span><span>Azure DevOps</span><span>Bicep</span><span>Key Vault</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2 class="section-title reveal">Career Log</h2>
+    <div class="timeline">
+      
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-title">
+              <h3>Software Engineer III - Cloud & DevOps</h3>
+              <h4>Cloudsufi</h4>
             </div>
-            <div class="hbs-card">
-              <div class="hbs-icon">☸️</div>
-              <div class="hbs-label">Kubernetes Expert</div>
-              <div class="hbs-sub">GKE · AKS · Anthos · EKS</div>
-            </div>
-            <div class="hbs-card">
-              <div class="hbs-icon">🏗️</div>
-              <div class="hbs-label">Infrastructure as Code</div>
-              <div class="hbs-sub">Terraform · Terragrunt · Pulumi</div>
-            </div>
-            <div class="hbs-card">
-              <div class="hbs-icon">🔒</div>
-              <div class="hbs-label">DevSecOps</div>
-              <div class="hbs-sub">Workload Identity · Cloud Armor · IAP</div>
-            </div>
+            <span class="timeline-date">Mar 2021 – Present</span>
+          </div>
+          <div class="timeline-body">
+            <ul>
+              <li>Architecting and managing enterprise cloud infrastructure on GCP and Azure.</li>
+              <li>Implementing Agentic AI-powered self-healing infrastructure using LangGraph & Gemini.</li>
+              <li>Designing Medallion data architectures processing 10TB+ daily with sub-second latency via BigQuery and Dataflow.</li>
+              <li>Managing multi-region GKE fleets with Anthos Service Mesh.</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- ② ABOUT ─────────────────────────────────────── -->
-    <section class="panel panel-alt" id="about">
-      <div class="bg-num">02</div>
-      <div class="panel-inner about-inner">
-        <div class="about-l">
-          <div class="eyebrow fe"><span class="eline"></span>01 — Profile</div>
-          <h2 class="ptitle fe">Architecting intelligent<br/><em>cloud systems at scale.</em></h2>
-          <p class="abody fe">Results-driven Senior Cloud &amp; DevOps Engineer with <strong>6+ years</strong> of hands-on experience architecting, automating, and managing production-grade cloud infrastructure on <strong>GCP and Azure</strong>. Deep expertise in <strong>Agentic AI-powered DevOps automation</strong>, building intelligent LLM-driven workflows for infrastructure provisioning, incident response, and self-healing systems.</p>
-          <p class="abody fe">Proven track record in <strong>Infrastructure as Code</strong> (Terraform/Terragrunt), Kubernetes orchestration (GKE/EKS), GitOps-based CI/CD pipeline design, and DevSecOps implementation. Skilled at integrating <strong>Generative AI and ML capabilities</strong> into cloud-native platforms to drive operational excellence and deliver high-availability production systems at scale.</p>
-          <div class="atags fe">
-            <span class="atag">Agentic AI / LLMOps</span>
-            <span class="atag">Cloud Architecture</span>
-            <span class="atag">GitOps</span>
-            <span class="atag">DevSecOps</span>
-            <span class="atag">FinOps</span>
-            <span class="atag">Chaos Engineering</span>
-          </div>
-        </div>
-        <div class="about-r">
-          <div class="aic-card fe">
-            <div class="aic"><span class="aic-ic">🏢</span><div><div class="aic-k">Company</div><div class="aic-v">Cloudsufi, Noida · Aug 2020 – Present</div></div></div>
-            <div class="aic-div"></div>
-            <div class="aic"><span class="aic-ic">📍</span><div><div class="aic-k">Location</div><div class="aic-v">Delhi, India</div></div></div>
-            <div class="aic-div"></div>
-            <div class="aic"><span class="aic-ic">🎓</span><div><div class="aic-k">Education</div><div class="aic-v">MCA · USICT, GGSIPU · Delhi</div></div></div>
-            <div class="aic-div"></div>
-            <div class="aic"><span class="aic-ic">📱</span><div><div class="aic-k">Phone</div><div class="aic-v">+91 9205041303</div></div></div>
-            <div class="aic-div"></div>
-            <div class="aic aic-hi"><span class="aic-ic">✦</span><div><div class="aic-k">Current Role</div><div class="aic-v">Software Engineer III – Cloud &amp; DevOps</div></div></div>
+      <!-- Education as Experience Nodes -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-title">
+              <h3>Master of Computer Applications (MCA)</h3>
+              <h4>GGSIPU, Delhi</h4>
+            </div>
+            <span class="timeline-date">Aug 2017 – Jul 2020</span>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- ③ SKILLS ─────────────────────────────────────── -->
-    <section class="panel" id="skills">
-      <div class="bg-num">03</div>
-      <div class="panel-inner col-inner">
-        <div class="sec-top">
-          <div class="eyebrow fe"><span class="eline"></span>02 — Expertise</div>
-          <h2 class="ptitle fe">The tools of <em>the trade.</em></h2>
-        </div>
-        <div class="skills-grid fe">
-          <div class="sbox"><div class="sbh">☁️ Cloud Platforms</div><div class="sbp"><span class="st st-gcp">GCP</span><span class="st st-az">Azure</span><span class="st">AWS (Fundamentals)</span></div></div>
-          <div class="sbox"><div class="sbh">🤖 Agentic AI &amp; GenAI</div><div class="sbp"><span class="st st-ai">LangGraph</span><span class="st st-ai">LangChain</span><span class="st st-ai">Vertex AI</span><span class="st st-ai">Gemini</span><span class="st st-ai">OpenAI APIs</span><span class="st">RAG · Prompt Engineering</span></div></div>
-          <div class="sbox"><div class="sbh">☸️ Containers &amp; Orchestration</div><div class="sbp"><span class="st">Docker</span><span class="st">Kubernetes</span><span class="st st-gcp">GKE</span><span class="st st-az">AKS</span><span class="st">EKS</span><span class="st">Helm · Kustomize</span></div></div>
-          <div class="sbox"><div class="sbh">🏗️ Infrastructure as Code</div><div class="sbp"><span class="st st-gold">Terraform</span><span class="st">Terragrunt</span><span class="st">OpenTofu</span><span class="st">Pulumi</span><span class="st">Ansible</span></div></div>
-          <div class="sbox"><div class="sbh">⚙️ CI/CD &amp; GitOps</div><div class="sbp"><span class="st">GitHub Actions</span><span class="st">GitLab CI/CD</span><span class="st">Jenkins</span><span class="st">ArgoCD</span><span class="st">FluxCD</span><span class="st">Spinnaker</span></div></div>
-          <div class="sbox"><div class="sbh">📊 Monitoring &amp; Observability</div><div class="sbp"><span class="st">Prometheus</span><span class="st">Grafana</span><span class="st">ELK Stack</span><span class="st">Datadog</span><span class="st">PagerDuty</span></div></div>
-          <div class="sbox"><div class="sbh">🔒 Networking &amp; Security</div><div class="sbp"><span class="st">VPC · Firewall Rules</span><span class="st">Cloud IAP · IAM</span><span class="st">Cloud Armor</span><span class="st">Workload Identity</span><span class="st">Secret Manager</span></div></div>
-          <div class="sbox"><div class="sbh">📦 Artifact &amp; SCM</div><div class="sbp"><span class="st">GAR · GCR</span><span class="st">JFrog</span><span class="st">ECR · ACR</span><span class="st">Nexus</span><span class="st">GitHub · GitLab · Bitbucket</span></div></div>
-          <div class="sbox"><div class="sbh">⚡ Serverless &amp; Data</div><div class="sbp"><span class="st">Cloud Run</span><span class="st">Cloud Functions</span><span class="st">BigQuery</span><span class="st">Pub/Sub · Kafka</span><span class="st">Dataflow</span></div></div>
-          <div class="sbox"><div class="sbh">💻 Languages</div><div class="sbp"><span class="st">Python</span><span class="st">Bash</span><span class="st">PowerShell</span><span class="st">Go</span><span class="st">YAML · JSON</span></div></div>
-          <div class="sbox"><div class="sbh">🖥️ Operating Systems</div><div class="sbp"><span class="st">Ubuntu · CentOS · Debian</span><span class="st">Alpine Linux</span><span class="st">Windows Server</span><span class="st">macOS</span></div></div>
-          <div class="sbox"><div class="sbh">📡 Cloud Services</div><div class="sbp"><span class="st">Compute Engine</span><span class="st">App Engine</span><span class="st">Cloud Build</span><span class="st">Cloud Composer</span><span class="st">Anthos · Istio</span></div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ④ PROJECTS ───────────────────────────────────── -->
-    <section class="panel panel-alt" id="projects">
-      <div class="bg-num">04</div>
-      <div class="panel-inner col-inner">
-        <div class="sec-top">
-          <div class="eyebrow fe"><span class="eline"></span>03 — Key Projects</div>
-          <h2 class="ptitle fe">What I've <em>engineered.</em></h2>
-        </div>
-        <div class="proj-grid">
-
-          <div class="pc fe" id="pc-1">
-            <div class="pc-num">01</div>
-            <div class="pc-top">
-              <h3 class="pc-t">Autonomous Infrastructure Remediation Agent</h3>
-              <span class="pc-tag">Agentic AI &amp; DevOps</span>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-title">
+              <h3>Bachelor of Computer Applications (BCA)</h3>
+              <h4>GGSIPU, Delhi</h4>
             </div>
-            <div class="pc-tech"><span class="pt">LangGraph</span><span class="pt">Gemini</span><span class="pt">Python</span><span class="pt">Kubernetes</span><span class="pt">Terraform</span><span class="pt">Prometheus</span></div>
-            <div class="pc-metric"><span class="pm-n">45%</span><span class="pm-l">MTTR Reduction — autonomous AI-driven remediation without human intervention</span></div>
-          </div>
-
-          <div class="pc fe" id="pc-2">
-            <div class="pc-num">02</div>
-            <div class="pc-top">
-              <h3 class="pc-t">LLM-Driven CI/CD Pipeline Optimizer</h3>
-              <span class="pc-tag">Agentic AI &amp; DevOps</span>
-            </div>
-            <div class="pc-tech"><span class="pt">GitHub Actions</span><span class="pt">LangChain</span><span class="pt">Vertex AI</span><span class="pt">ArgoCD</span><span class="pt">SonarQube</span></div>
-            <div class="pc-metric"><span class="pm-n">40%</span><span class="pm-l">Deployment Velocity — across 30+ microservices via GitOps automation</span></div>
-          </div>
-
-          <div class="pc fe" id="pc-3">
-            <div class="pc-num">03</div>
-            <div class="pc-top">
-              <h3 class="pc-t">Multi-Region GKE Fleet &amp; Anthos Service Mesh</h3>
-              <span class="pc-tag">GCP &amp; Kubernetes</span>
-            </div>
-            <div class="pc-tech"><span class="pt">GKE</span><span class="pt">Anthos</span><span class="pt">Istio</span><span class="pt">Terragrunt</span><span class="pt">Cloud Armor</span><span class="pt">Cloud Build</span></div>
-            <div class="pc-metric"><span class="pm-n">0</span><span class="pm-l">Downtime — active-active multi-region failover with mTLS encryption</span></div>
-          </div>
-
-          <div class="pc fe" id="pc-4">
-            <div class="pc-num">04</div>
-            <div class="pc-top">
-              <h3 class="pc-t">Enterprise Data Platform Orchestration</h3>
-              <span class="pc-tag">GCP &amp; Kubernetes</span>
-            </div>
-            <div class="pc-tech"><span class="pt">BigQuery</span><span class="pt">Dataflow</span><span class="pt">Cloud Composer</span><span class="pt">Pub/Sub</span><span class="pt">Kubernetes</span></div>
-            <div class="pc-metric"><span class="pm-n">10TB+</span><span class="pm-l">Daily ingestion — sub-second latency Medallion data architecture</span></div>
-          </div>
-
-          <div class="pc fe" id="pc-5">
-            <div class="pc-num">05</div>
-            <div class="pc-top">
-              <h3 class="pc-t">Azure Enterprise-Scale Landing Zone &amp; AKS Migration</h3>
-              <span class="pc-tag">Azure</span>
-            </div>
-            <div class="pc-tech"><span class="pt">AKS</span><span class="pt">Azure DevOps</span><span class="pt">Bicep</span><span class="pt">Azure Front Door</span><span class="pt">Key Vault</span></div>
-            <div class="pc-metric"><span class="pm-n">15%</span><span class="pm-l">Cost Reduction — 25+ legacy apps migrated, FinOps dashboard, WAF secured</span></div>
-          </div>
-
-          <div class="pc fe" id="pc-6">
-            <div class="pc-num">06</div>
-            <div class="pc-top">
-              <h3 class="pc-t">Serverless Event-Driven Architecture</h3>
-              <span class="pc-tag">AWS</span>
-            </div>
-            <div class="pc-tech"><span class="pt">Lambda</span><span class="pt">ECS Fargate</span><span class="pt">EventBridge</span><span class="pt">DynamoDB</span><span class="pt">API Gateway</span></div>
-            <div class="pc-metric"><span class="pm-n">100%</span><span class="pm-l">IaC automated — CloudWatch auto-scaling on queue depth</span></div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ⑤ EXPERIENCE ─────────────────────────────────── -->
-    <section class="panel" id="experience">
-      <div class="bg-num">05</div>
-      <div class="panel-inner exp-inner">
-        <div class="exp-l">
-          <div class="eyebrow fe"><span class="eline"></span>04 — Experience</div>
-          <h2 class="ptitle fe">Five years, one mission —<br/><em>cloud excellence.</em></h2>
-          <p class="abody fe">Joined Cloudsufi as a Trainee in 2020 and rapidly progressed to Software Engineer III – Cloud &amp; DevOps, delivering enterprise infrastructure at scale across GCP, Azure, and AWS.</p>
-          <div class="exp-tenure fe">
-            <div class="et-item"><div class="et-n">5<span>+</span></div><div class="et-l">Years at Cloudsufi</div></div>
-            <div class="et-div"></div>
-            <div class="et-item"><div class="et-n">6</div><div class="et-l">Major Projects</div></div>
-            <div class="et-div"></div>
-            <div class="et-item"><div class="et-n">3</div><div class="et-l">Cloud Platforms</div></div>
-          </div>
-        </div>
-        <div class="exp-r">
-          <div class="exp-card fe" id="exp-main">
-            <div class="ec-accent"></div>
-            <div class="ec-body">
-              <div class="ec-hdr">
-                <div>
-                  <div class="ec-company">CLOUDSUFI</div>
-                  <h3 class="ec-role">Software Engineer III – Cloud &amp; DevOps</h3>
-                  <div class="ec-loc">Noida, India</div>
-                </div>
-                <div class="ec-date-wrap">
-                  <div class="ec-date">Aug 2020</div>
-                  <div class="ec-arrow">↓</div>
-                  <div class="ec-date ec-date-now">Present</div>
-                </div>
-              </div>
-              <div class="ec-tags">
-                <span class="ect">GCP Architect</span><span class="ect">Agentic AI</span><span class="ect">Kubernetes</span>
-                <span class="ect">Terraform</span><span class="ect">DevSecOps</span><span class="ect">Multi-Cloud</span>
-              </div>
-              <div class="ec-highlights">
-                <div class="ech">✦ Agentic AI-powered self-healing infrastructure with LangGraph &amp; Gemini</div>
-                <div class="ech">✦ Multi-region GKE fleet with Anthos Service Mesh &amp; zero-downtime failover</div>
-                <div class="ech">✦ LLM-driven CI/CD optimizer — 40% velocity gain across 30+ microservices</div>
-                <div class="ech">✦ Enterprise Azure Landing Zone migration for 25+ legacy monolithic apps</div>
-                <div class="ech">✦ Medallion data architecture processing 10TB+ daily with sub-second latency</div>
-              </div>
-            </div>
+            <span class="timeline-date">Aug 2014 – Jul 2017</span>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- ⑥ CREDENTIALS ────────────────────────────────── -->
-    <section class="panel panel-alt" id="credentials">
-      <div class="bg-num">06</div>
-      <div class="panel-inner col-inner">
-        <div class="sec-top">
-          <div class="eyebrow fe"><span class="eline"></span>05 — Credentials</div>
-          <h2 class="ptitle fe">Certified at the <em>highest level.</em></h2>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <h2 class="section-title reveal">Credentials</h2>
+    <div class="skills-container">
+      
+      <div class="skill-category reveal">
+        <div class="skill-header">
+          <span class="skill-icon">🏆</span>
+          <h3 class="skill-title">Google Cloud</h3>
         </div>
-        <div class="creds-wrap">
-          <div class="certs-row">
-            <div class="cert-c fe" id="cc-1">
-              <div class="cert-logo cl-gcp">GCP</div>
-              <div class="cert-info">
-                <div class="cert-name">Generative AI Leader</div>
-                <div class="cert-iss">Google Cloud · May 2026</div>
-              </div>
-              <div class="cert-badge cb-ok">✓</div>
-            </div>
-            <div class="cert-c fe" id="cc-2">
-              <div class="cert-logo cl-gcp">GCP</div>
-              <div class="cert-info">
-                <div class="cert-name">Certified DevOps Engineer</div>
-                <div class="cert-iss">Google Cloud · April 2025</div>
-              </div>
-              <div class="cert-badge cb-ok">✓</div>
-            </div>
-            <div class="cert-c fe" id="cc-3">
-              <div class="cert-logo cl-tf">HCP</div>
-              <div class="cert-info">
-                <div class="cert-name">Terraform Associate</div>
-                <div class="cert-iss">HashiCorp · October 2023</div>
-              </div>
-              <div class="cert-badge cb-ok">✓</div>
-            </div>
-            <div class="cert-c fe" id="cc-4">
-              <div class="cert-logo cl-gcp">GCP</div>
-              <div class="cert-info">
-                <div class="cert-name">Professional Cloud Architect</div>
-                <div class="cert-iss">Google Cloud · October 2022</div>
-              </div>
-              <div class="cert-badge cb-ok">✓</div>
-            </div>
-            <div class="cert-c fe" id="cc-5">
-              <div class="cert-logo cl-az">AZ</div>
-              <div class="cert-info">
-                <div class="cert-name">Azure Fundamentals (AZ-900)</div>
-                <div class="cert-iss">Microsoft · June 2021</div>
-              </div>
-              <div class="cert-badge cb-ok">✓</div>
-            </div>
-          </div>
-          <div class="edu-row fe">
-            <div class="edu-c" id="edu-1">
-              <span class="edu-ic">🎓</span>
-              <div>
-                <div class="edu-deg">Master of Computer Applications (MCA)</div>
-                <div class="edu-school">University School of Information, Communication &amp; Technology, GGSIPU</div>
-                <div class="edu-yr">Aug 2017 – July 2020 · Delhi, India</div>
-              </div>
-            </div>
-            <div class="edu-c" id="edu-2">
-              <span class="edu-ic">🎓</span>
-              <div>
-                <div class="edu-deg">Bachelor of Computer Applications (BCA)</div>
-                <div class="edu-school">Maharaja Surajmal Institute of Technology, GGSIPU</div>
-                <div class="edu-yr">Aug 2014 – July 2017 · Delhi, India</div>
-              </div>
-            </div>
-          </div>
+        <div class="timeline-body" style="padding-top: 0">
+          <ul>
+            <li>Generative AI Leader (May 2026)</li>
+            <li>Certified DevOps Engineer (Apr 2025)</li>
+            <li>Professional Cloud Architect (Oct 2022)</li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <!-- ⑦ CONTACT ────────────────────────────────────── -->
-    <section class="panel" id="contact">
-      <div class="bg-num">07</div>
-      <div class="panel-inner contact-inner">
-        <div class="eyebrow fe"><span class="eline"></span>06 — Contact</div>
-        <h2 class="contact-h fe">Let's build something<br/><em>remarkable.</em></h2>
-        <p class="contact-sub fe">Available for senior cloud architecture roles, DevOps consulting, and enterprise AI + infrastructure engagements.</p>
-        <div class="contact-grid fe">
-          <a href="mailto:iamjatinnaudiyal@gmail.com" class="co-card" id="co-email">
-            <div class="co-ic">✉</div>
-            <div class="co-lbl">Email</div>
-            <div class="co-val">iamjatinnaudiyal@gmail.com</div>
-            <div class="co-arr">→</div>
-          </a>
-          <a href="https://linkedin.com/in/jatinnaudiyal" target="_blank" rel="noopener" class="co-card" id="co-li">
-            <div class="co-ic">in</div>
-            <div class="co-lbl">LinkedIn</div>
-            <div class="co-val">linkedin.com/in/jatinnaudiyal</div>
-            <div class="co-arr">→</div>
-          </a>
-          <a href="tel:+919205041303" class="co-card" id="co-ph">
-            <div class="co-ic">📞</div>
-            <div class="co-lbl">Phone</div>
-            <div class="co-val">+91 9205041303</div>
-            <div class="co-arr">→</div>
-          </a>
-          <a href="https://linkedin.com/in/jatinnaudiyal" target="_blank" rel="noopener" class="co-card" id="co-loc">
-            <div class="co-ic">📍</div>
-            <div class="co-lbl">Location</div>
-            <div class="co-val">Delhi, India</div>
-            <div class="co-arr">→</div>
-          </a>
+      <div class="skill-category reveal">
+        <div class="skill-header">
+          <span class="skill-icon">🏆</span>
+          <h3 class="skill-title">HashiCorp & Microsoft</h3>
         </div>
-        <a href="mailto:iamjatinnaudiyal@gmail.com" class="big-cta fe" id="big-cta-btn">
-          Send a Message
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <div class="foot fe">
-          <span class="foot-mono">JN</span>
-          <span class="foot-copy">© 2025 Jatin Naudiyal · Senior Cloud &amp; DevOps Engineer · Cloudsufi</span>
+        <div class="timeline-body" style="padding-top: 0">
+          <ul>
+            <li>Terraform Associate (Oct 2023)</li>
+            <li>Azure Fundamentals AZ-900 (Jun 2021)</li>
+          </ul>
         </div>
       </div>
-    </section>
 
-  </main>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section reveal">
+    <h2 class="section-title">Initiate Connection</h2>
+    <p class="contact-desc">
+      Whether you have a question, a freelance inquiry, or want to discuss enterprise cloud architectures and Agentic AI DevOps, my inbox is always open.
+    </p>
+    <a href="mailto:iamjatinnaudiyal@gmail.com" class="btn primary" style="font-size: 1.1rem; padding: 15px 40px;">Say Hello -></a>
+  </section>
+
+  <footer>
+    <p>Designed & Engineered by Jatin Naudiyal | 2026</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
